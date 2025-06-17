@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GadgetPlug | Cool Amazon Finds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      transition: background 0.3s, color 0.3s;
+    }
+    .dark-mode {
+      background: #121212;
+      color: #f1f1f1;
+    }
+    .container {
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .bio {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    .description {
+      font-size: 0.85rem;
+      color: #555;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+    }
+    .link-button {
+      display: block;
+      width: 100%;
+      background: #0073e6;
+      color: #fff;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .link-button:hover {
+      background: #005bb5;
+    }
+    .dark-mode .link-button {
+      background: #1e88e5;
+    }
+    .dark-mode .link-button:hover {
+      background: #1565c0;
+    }
+    .socials {
+      margin-top: 2rem;
+    }
+    .socials a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #0073e6;
+    }
+    .toggle-theme {
+      margin-top: 1rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: #0073e6;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="logo.png" alt="GadgetPlug Logo">
+    <h1>GadgetPlug</h1>
+    <p class="bio">Cool & Useful Amazon Gadgets 🔌</p>
+    <p class="description">
+      Discover the smartest and most useful Amazon gadgets! From tech tools to everyday helpers — no voice, no face, just pure product satisfaction. 
+      All links are affiliate links. New content every week. 📦
+    </p>
+
+    <a class="link-button" href="https://amzn.to/3a1b2c3" target="_blank">🔗 Self-Stirring Mug</a>
+    <a class="link-button" href="https://amzn.to/3d4e5f6" target="_blank">🔗 Car Cleaning Gel</a>
+    <a class="link-button" href="https://amzn.to/7g8h9i0" target="_blank">🔗 Multi-Use Kitchen Scissors</a>
+    <a class="link-button" href="https://amzn.to/9j0k1l2" target="_blank">🔗 Magnetic Phone Holder</a>
+    <a class="link-button" href="https://amzn.to/3m4n5o6" target="_blank">🔗 LED Night Light</a>
+    <a class="link-button" href="https://amzn.to/1p2q3r4" target="_blank">🔗 Mini Air Humidifier</a>
+
+    <div class="socials">
+      <a href="https://youtube.com/@GadgetPlug" target="_blank">YouTube</a>
+      <a href="#" target="_blank">TikTok</a>
+      <a href="#" target="_blank">Instagram</a>
+    </div>
+
+    <div class="toggle-theme" onclick="toggleTheme()">Toggle Dark Mode</div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
